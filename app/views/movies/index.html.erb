@@ -3,7 +3,7 @@
 
 <%#  Part 2: Start here... %>
 
-<%= form_tag movies_path(sort_by: @sort_by), method: :get, id: 'ratings_form', local: true do %>
+<%= form_tag movies_path, method: :get, id: 'ratings_form', local: true do %>
   Include:
   <% @all_ratings.each do |rating| %>
     <div class="form-check  form-check-inline">
