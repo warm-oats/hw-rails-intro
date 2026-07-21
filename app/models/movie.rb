@@ -8,4 +8,8 @@ class Movie < ApplicationRecord
     Movie.where(rating: ratings_list)
   end
 
+  def self.with_sort(sort_select)
+    Movie.order(sort_select)
+  end
+
 end
